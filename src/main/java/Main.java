@@ -21,7 +21,6 @@ public class Main {
                 emailSendingService.sendEmail(email2, buildEmail(lastProject), topic);
             }
             lastProjectsName = newProjectsName;
-            System.out.println("miau");
             Thread.sleep(1000 * 60);
         }
     }
