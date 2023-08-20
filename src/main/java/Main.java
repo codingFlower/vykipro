@@ -4,13 +4,12 @@ public class Main {
 
 
     public static void main(String[] args) throws InterruptedException {
-        String lastProjectsName = null;
+        String lastProjectsName = "s";
         RestTemplate restTemplate = new RestTemplate();
         EmailSendingService emailSendingService = new EmailSendingService();
         String email = "vykintas.martusevicius@gmail.com";
         String email2 = "auste44@gmail.com";
         String topic = "Naujas Profitus Projektas";
-
         while (true) {
             var response = restTemplate.getForEntity("https://api.profitus.com/api/v1/landing/projects?limit=8&page=1", ProfitusResponse.class);
 
@@ -22,8 +21,8 @@ public class Main {
                 emailSendingService.sendEmail(email2, buildEmail(lastProject), topic);
             }
             lastProjectsName = newProjectsName;
-
-            Thread.sleep(3600 * 60);
+            System.out.println("miau");
+            Thread.sleep(1000 * 60);
         }
     }
 
