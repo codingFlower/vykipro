@@ -1,6 +1,6 @@
-import lombok.Data;
+package Vykintas.DTO;
 
-import java.util.List;
+import lombok.Data;
 
 @Data
 public class FizzRequest {

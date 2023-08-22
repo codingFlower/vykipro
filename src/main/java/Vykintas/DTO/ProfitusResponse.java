@@ -1,3 +1,5 @@
+package Vykintas.DTO;
+
 import java.util.List;
 
 public class ProfitusResponse {
@@ -16,7 +18,7 @@ public class ProfitusResponse {
 
     @Override
     public String toString() {
-        return "ProfitusResponse{" +
+        return "Vykintas.DTO.ProfitusResponse{" +
                 "data=" + data +
                 '}';
     }

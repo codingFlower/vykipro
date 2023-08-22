@@ -1,3 +1,5 @@
+package Vykintas.DTO;
+
 public class Project {
     private String project_name;
     private String rating_profitus;
@@ -41,7 +43,7 @@ public class Project {
 
     @Override
     public String toString() {
-        return "Project{" +
+        return "Vykintas.DTO.Project{" +
                 "project_name='" + project_name + '\'' +
                 ", rating_profitus='" + rating_profitus + '\'' +
                 ", basic_interest=" + basic_interest +

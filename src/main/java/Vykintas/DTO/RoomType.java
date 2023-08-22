@@ -1,3 +1,5 @@
+package Vykintas.DTO;
+
 import lombok.Data;
 import lombok.ToString;
 
